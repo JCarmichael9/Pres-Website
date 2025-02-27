@@ -1,0 +1,131 @@
+body {
+    background-color: rgb(68, 68, 68);
+}
+
+.slideystuff {
+    position: absolute; bottom: 0;
+}
+
+.theButton {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); /* Start really small */
+    opacity: 0; /* Hide it initially */
+    animation: appear 0.5s ease-out forwards;
+    animation-delay: 5s;
+}
+
+@keyframes appear {
+    from {
+        transform: translate(-50%, -50%) scale(0.1);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
+
+
+.quote {
+    transform: translateY(-100vh); /* Start off-screen above */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s  forwards;
+    animation-delay: 1.5s; /* Waits 10 seconds before running */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.johnson {
+    transform: translateY(-100vh); /* Start off-screen above */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s  forwards;
+    animation-delay: 2s; /* Waits 10 seconds before running */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.B {
+    transform: translateY(-100vh); /* Start off-screen above */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s  forwards;
+    animation-delay: 2.5s; /* Waits 10 seconds before running */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.lyndon {
+    transform: translateY(-100vh); /* Start off-screen above */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s  forwards;
+    animation-delay: 3s; /* Waits 10 seconds before running */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.slideImg {
+    height: 600px;
+    position: absolute; right: 0; bottom: 0;
+    transform: translateY(-100vh); /* Start off-screen above */
+    opacity: 0;
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s  forwards;
+    animation-delay: 4s; /* Waits 10 seconds before running */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slideImg {
+    height: 600px;
+    position: absolute; right: 0; bottom: 0;
+}
