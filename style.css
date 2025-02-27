@@ -1,21 +1,29 @@
+/* Sets the background color of the entire page */
 body {
     background-color: rgb(68, 68, 68);
 }
 
+/* Makes the element stay at the bottom of the page */
 .slideystuff {
-    position: absolute; bottom: 0;
+    position: absolute;
+    bottom: 0;
 }
 
+/* Styles the button */
 .theButton {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1); /* Start really small */
-    opacity: 0; /* Hide it initially */
-    animation: appear 0.5s ease-out forwards;
-    animation-delay: 5s;
+    position: fixed; /* Stays in the same place even when scrolling */
+    top: 50%; /* Moves it to the vertical center */
+    left: 50%; /* Moves it to the horizontal center */
+    transform: translate(-50%, -50%) scale(0.1); /* Starts small in the center */
+    opacity: 0; /* Hidden initially */
+    animation: appear 0.5s ease-out forwards; /* Animation to make it pop in */
+    animation-delay: 5s; /* Appears after 5 seconds */
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+/* Animation for the button to grow and fade in */
 @keyframes appear {
     from {
         transform: translate(-50%, -50%) scale(0.1);
@@ -27,105 +35,56 @@ body {
     }
 }
 
+/* Sliding text effect (applies to multiple classes) */
+.quote, .johnson, .B, .lyndon, .slideImg {
+    transform: translateY(-100vh); /* Starts off-screen above */
+    opacity: 0; /* Hidden initially */
+    transition: transform 0.1s linear, opacity 0.1s linear;
+    animation: slideDown 0.1s forwards;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Each text has a different delay so they appear at different times */
+.quote { animation-delay: 1.5s; } /* First text appears after 1.5 seconds */
+.johnson { animation-delay: 2s; } /* Second text after 2 seconds */
+.B { animation-delay: 2.5s; } /* Third text after 2.5 seconds */
+.lyndon { animation-delay: 3s; } /* Fourth text after 3 seconds */
+.slideImg { animation-delay: 4s; } /* Image appears after 4 seconds */
+
+/* Keyframe animation to make elements slide down */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100vh); /* Start above */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* End position (fully visible) */
+        opacity: 1;
+    }
+}
+
+/* Positions the image on the bottom right */
+.slideImg {
+    height: 600px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 .quote {
-    transform: translateY(-100vh); /* Start off-screen above */
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.1s linear;
-    animation: slideDown 0.1s  forwards;
-    animation-delay: 1.5s; /* Waits 10 seconds before running */
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.johnson {
-    transform: translateY(-100vh); /* Start off-screen above */
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.1s linear;
-    animation: slideDown 0.1s  forwards;
-    animation-delay: 2s; /* Waits 10 seconds before running */
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.B {
-    transform: translateY(-100vh); /* Start off-screen above */
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.1s linear;
-    animation: slideDown 0.1s  forwards;
-    animation-delay: 2.5s; /* Waits 10 seconds before running */
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.lyndon {
-    transform: translateY(-100vh); /* Start off-screen above */
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.1s linear;
-    animation: slideDown 0.1s  forwards;
-    animation-delay: 3s; /* Waits 10 seconds before running */
-}
-
-@keyframes slideDown {
-    from {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    font-size: 50px;
+    color: rgb(211, 211, 211);
 }
 
 
-.slideImg {
-    height: 600px;
-    position: absolute; right: 0; bottom: 0;
-    transform: translateY(-100vh); /* Start off-screen above */
-    opacity: 0;
-    transition: transform 0.1s linear, opacity 0.1s linear;
-    animation: slideDown 0.1s  forwards;
-    animation-delay: 4s; /* Waits 10 seconds before running */
+.johnson, .lyndon, .B {
+    font-size: 130px;
+    color: rgb(211, 211, 211);
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-.slideImg {
-    height: 600px;
-    position: absolute; right: 0; bottom: 0;
+.theButton {
+    font-size: 100px;
+    color: rgb(211, 211, 211);
 }
