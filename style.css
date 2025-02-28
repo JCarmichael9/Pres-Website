@@ -88,3 +88,27 @@ body {
     font-size: 4vw;
     color: rgb(211, 211, 211);
 }
+
+#png {
+    height: 50px;
+}
+
+#navItems {
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(68, 68, 68);
+}
+
+.navbar {
+    background-color: rgb(211, 211, 211);
+}
+
+.navbar-toggler {
+    border: 10px double rgb(68, 68, 68);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;  
+    border: 10px double rgb(68, 68, 68);
+}
