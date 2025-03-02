@@ -116,8 +116,80 @@ body {
     color: rgb(211, 211, 211);
 }
 
-.slideFromRight {
+.slideFromRight1, .slideFromRight2 {
     text-align: right; /* Align text to the right */
     margin-left: auto; /* Push it to the right */
 }
 
+.theButton {
+    font-size: 4vw;
+}
+
+.info {
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(211, 211, 211);
+}
+
+footer {
+    border-top: 3px solid rgb(211, 211, 211);
+    padding-top: 10px; 
+    text-align: center; 
+    background-color: transparent; 
+    border-radius: 5px; margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(211, 211, 211);
+}
+
+
+.slideFromLeft1 {
+    transform: translateY(-100vh); /* Starts off-screen above */
+    animation: slideLeft 1s forwards;
+    animation-delay: 0.5s; /* Add delay to the first element */
+}
+
+.slideFromLeft2 {
+    transform: translateY(-100vh); /* Starts off-screen above */
+    animation: slideLeft 1s forwards;
+    animation-delay: 2.5s; /* Add delay to the first element */
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100vw); /* Start left */
+    }
+    to {
+        transform: translateX(0); /* End position (fully visible) */
+    }
+}
+
+.slideFromRight1 {
+    transform: translateY(-100vh); /* Starts off-screen above */
+    animation: slideRight 1s forwards;
+    animation-delay: 1.5s; /* Add delay to the first element */
+}
+
+.slideFromRight2 {
+    transform: translateY(-100vh); /* Starts off-screen above */
+    animation: slideRight 1s forwards;
+    animation-delay: 3.5s; /* Add delay to the second element */
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100vw); /* Start off-screen to the right */
+    }
+    to {
+        transform: translateX(0); /* End position (fully visible) */
+    }
+}
