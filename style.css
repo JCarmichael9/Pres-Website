@@ -67,25 +67,21 @@ body {
 
 /* Positions the image on the bottom right */
 .slideImg {
-    width: 30vw;
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
 .quote {
-    font-size: 2.5vw;
     color: rgb(211, 211, 211);
 }
 
 
 .johnson, .lyndon, .B {
-    font-size: 7vw;
     color: rgb(211, 211, 211);
 }
 
 .theButton {
-    font-size: 4vw;
     color: rgb(211, 211, 211);
 }
 
@@ -113,14 +109,15 @@ body {
     border: 10px double rgb(68, 68, 68);
 }
 
-.shake {
- animation: shake 10s;
+.title {
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(211, 211, 211);
 }
 
-@keyframes shake {
-    0% { transform: translateX(0) }
-    25% { transform: translateX(5px) }
-    50% { transform: translateX(-5px) }
-    75% { transform: translateX(5px) }
-    100% { transform: translateX(0) }
-   }
+.slideFromRight {
+    text-align: right; /* Align text to the right */
+    margin-left: auto; /* Push it to the right */
+}
+

@@ -21,7 +21,3 @@ function generateQuote() {
 
 // Run the function when the page loads
 window.onload = generateQuote;
-
-setTimeout(function(){
-    document.getElementById('shake').classList.add('shake')
-},4300) 
