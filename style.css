@@ -193,3 +193,15 @@ p {
         transform: translateX(0); /* End position (fully visible) */
     }
 }
+
+.card {
+    background-color: rgb(211, 211, 211);
+}
+
+.infoFacts, .infoTitle {
+    color: rgb(68, 68, 68);
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
