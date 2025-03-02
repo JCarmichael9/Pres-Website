@@ -96,6 +96,7 @@ body {
     color: rgb(68, 68, 68);
 }
 
+
 .navbar {
     background-color: rgb(211, 211, 211);
 }
@@ -180,7 +181,7 @@ p {
 }
 
 .slideFromRight2 {
-    transform: translateY(-100vh); /* Starts off-screen above */
+    transform: translateY(-1000vh); /* Starts off-screen above */
     animation: slideRight 1s forwards;
     animation-delay: 3.5s; /* Add delay to the second element */
 }
@@ -251,4 +252,19 @@ p {
     color: rgb(68, 68, 68);
     transform: rotateY(180deg);
     padding: 20px;
+}
+
+.stuff {
+    color: rgb(211, 211, 211);
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.secondButton {
+    background-color: rgb(211, 211, 211);
+    color: rgb(68, 68, 68);
+    font-family: "wausau", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

@@ -21,3 +21,18 @@ function generateQuote() {
 
 // Run the function when the page loads
 window.onload = generateQuote;
+
+function checkAnswers() {
+    let score = 0;
+    let answer1 = document.querySelector('input[name="q1"]:checked');
+    let answer2 = document.querySelector('input[name="q2"]:checked');
+    
+    if (answer1 && answer1.value === "b") {
+        score++;
+    }
+    if (answer2 && answer2.value === "a") {
+        score++;
+    }
+    
+    document.getElementById("result").innerText = `You scored ${score}/2!`;
+}
