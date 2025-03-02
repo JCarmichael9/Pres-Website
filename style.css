@@ -167,7 +167,7 @@ p {
 
 @keyframes slideLeft {
     from {
-        transform: translateX(-100vw); /* Start left */
+        transform: translateX(-1000vw); /* Start left */
     }
     to {
         transform: translateX(0); /* End position (fully visible) */
@@ -175,20 +175,20 @@ p {
 }
 
 .slideFromRight1 {
-    transform: translateY(-100vh); /* Starts off-screen above */
+    transform: translateX(-1000vw); /* Starts off-screen above */
     animation: slideRight 1s forwards;
     animation-delay: 1.5s; /* Add delay to the first element */
 }
 
 .slideFromRight2 {
-    transform: translateY(-1000vh); /* Starts off-screen above */
+    transform: translateX(-1000vw); /* Starts off-screen above */
     animation: slideRight 1s forwards;
     animation-delay: 3.5s; /* Add delay to the second element */
 }
 
 @keyframes slideRight {
     from {
-        transform: translateX(100vw); /* Start off-screen to the right */
+        transform: translateX(1000vw); /* Start off-screen to the right */
     }
     to {
         transform: translateX(0); /* End position (fully visible) */
